@@ -38,8 +38,8 @@ const Transaction = ({ transacion }) => {
             display ? 'shadow-sm border-bottom rounded-bottom' : ''
           }   rouded bordered `}
         >
-          <span>Para: {transacion?.reciver}</span>
-          <span>Detalles: {transacion?.details}</span>
+          <span className="mx-1">Para: {transacion?.reciver}</span>
+          <span className="mx-1">Detalles: {transacion?.details}</span>
         </div>
       ) : null}
     </>

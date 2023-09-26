@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Card } from 'react-bootstrap'
+import { BsChevronDown } from 'react-icons/bs'
 import TransactionContext from '../context/TransactionContext'
 
 const CardBalance = () => {
@@ -22,7 +23,7 @@ const CardBalance = () => {
       .reduce((acc, item) => (acc += Number(item)), 0) * -1
 
   return (
-    <Card className="my-4 blodk rounded-lg shadow-xs bordered mx-auto ">
+    <Card className="my-4 shadow rounded-lg bordered mx-auto ">
       <div className="w-100 justify-content-center text-center items-center mt-3 p-2 ">
         <span className="fw-bold">Balance del mes</span>
         <p className="fs-1 fw-bold text-primary">
@@ -40,8 +41,9 @@ const CardBalance = () => {
           <p className="fs-1 fw-bold">- ${gastos}</p>
         </div>
       </div>
-      <div className="d-flex justify-content-center p-4 text-muted">
+      <div className="d-flex justify-content-center align-items-center gap-1 p-4 text-muted">
         Ver analíticas
+        <BsChevronDown />
       </div>
     </Card>
   )

@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 import TransactionContext from './TransactionContext'
 import TransactionReducer from './TransactionReducer'
+import toast from 'react-hot-toast'
 
 const TransactionState = ({ children }) => {
   const URL = import.meta.env.VITE_API_URL
@@ -19,14 +20,16 @@ const TransactionState = ({ children }) => {
         },
         body: JSON.stringify(body)
       })
-      const data = await response.json()
 
+      const data = await response.json()
+      toast.success('Movimiento exitoso')
       dispatch({
         type: 'ADD_TRANSACTION',
         payload: data
       })
     } catch (error) {
       console.log(error)
+      toast.error('Hubo un error en el movimiento')
     }
   }
 
