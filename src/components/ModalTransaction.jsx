@@ -39,9 +39,10 @@ const ModalSports = ({ modalShow, handleClose }) => {
             <Form.Group>
               <Form.Label>Fecha</Form.Label>
               <Form.Control
-                type="text"
+                type="date"
                 id="date"
                 name="date"
+                value={data.date}
                 onChange={(e) => handleOnChange(e)}
               ></Form.Control>
             </Form.Group>
@@ -51,6 +52,7 @@ const ModalSports = ({ modalShow, handleClose }) => {
                 type="text"
                 id="concept"
                 name="concept"
+                value={data.concept}
                 onChange={(e) => handleOnChange(e)}
               ></Form.Control>
             </Form.Group>
@@ -61,6 +63,7 @@ const ModalSports = ({ modalShow, handleClose }) => {
                 step="0.01"
                 id="amount"
                 name="amount"
+                value={data.amount}
                 onChange={(e) => handleOnChange(e)}
               ></Form.Control>
             </Form.Group>
@@ -69,6 +72,7 @@ const ModalSports = ({ modalShow, handleClose }) => {
               type="text"
               id="reciver"
               name="reciver"
+              value={data.reciver}
               onChange={(e) => handleOnChange(e)}
             ></Form.Control>
             <Form.Label>Detalles</Form.Label>
@@ -76,6 +80,7 @@ const ModalSports = ({ modalShow, handleClose }) => {
               type="text"
               id="details"
               name="details"
+              value={data.details}
               onChange={(e) => handleOnChange(e)}
             ></Form.Control>
           </Modal.Body>

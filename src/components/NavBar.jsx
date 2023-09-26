@@ -18,7 +18,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-01`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-01`}
@@ -28,7 +28,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-02`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-02`}
@@ -38,7 +38,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-03`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-03`}
@@ -48,7 +48,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-04`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-04`}
@@ -58,7 +58,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-05`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-05`}
@@ -68,7 +68,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-06`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-06`}
@@ -78,7 +78,7 @@ const NavBar = () => {
               <Link
                 className={`nav-link text-light ${
                   pathname === `/month/${year}-07`
-                    ? 'fs-4 text-decoration px-4 '
+                    ? 'fs-4 text-decoration '
                     : 'px-3'
                 }`}
                 to={`../month/${year}-07`}

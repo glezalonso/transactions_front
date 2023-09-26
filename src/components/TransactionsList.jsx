@@ -3,7 +3,7 @@ import Transaction from './Transaction'
 import TransactionContext from '../context/TransactionContext'
 import { useParams } from 'react-router-dom'
 
-const TransactionsList = ({ transacion }) => {
+const TransactionsList = () => {
   const { date } = useParams()
   const { transactions, getTransactions } = useContext(TransactionContext)
 
