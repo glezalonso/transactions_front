@@ -1,0 +1,94 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "date": "2023-09-05",
+      "concept": "Pago netflix",
+      "amount": 150
+    },
+    {
+      "id": "2",
+      "date": "2023-08-06",
+      "concept": "Salario",
+      "amount": 1500
+    },
+    {
+      "id": "3",
+      "date": "2023-08-07",
+      "concept": "Préstamo",
+      "amount": 500
+    },
+    {
+      "date": "2023-09-09",
+      "concept": "Pago luz",
+      "amount": 225,
+      "id": "FT8xgpr"
+    },
+    {
+      "date": "2023-09-09",
+      "concept": "2023",
+      "amount": -180,
+      "id": "g-Jjh1E"
+    },
+    {
+      "date": "2022-08-05",
+      "concept": "Pago Predial",
+      "amount": -180,
+      "id": "USdPxVa"
+    },
+    {
+      "date": "2022-08-05",
+      "concept": "Pago luz",
+      "amount": 223,
+      "id": "tLQolr3"
+    },
+    {
+      "date": "2022-08-05",
+      "concept": "Pago luz",
+      "amount": 223,
+      "id": "hPpg2Td"
+    },
+    {
+      "date": "2023-09-05",
+      "concept": "Pago Roku",
+      "amount": 223,
+      "id": "VEkBYOq"
+    },
+    {
+      "date": "2022-08-05",
+      "concept": "Pago luz",
+      "amount": 223,
+      "id": "E9-O4lS"
+    },
+    {
+      "date": "2023-09-05",
+      "concept": "Parlay",
+      "amount": 234,
+      "id": "BK2yVaJ"
+    },
+    {
+      "date": "2023-09-05",
+      "concept": "trasnfermarket",
+      "amount": 200,
+      "id": "30ogPny"
+    },
+    {
+      "date": "2023-09-05",
+      "concept": "Neflix",
+      "amount": 120,
+      "id": "l8GrEYd"
+    },
+    {
+      "date": "2023-09-05",
+      "concept": "Pago Predial",
+      "amount": "200",
+      "id": "OfTl7RE"
+    },
+    {
+      "date": "2023-09-05",
+      "concept": "Amazon",
+      "amount": "99.99",
+      "id": "t5pasPh"
+    }
+  ]
+}
