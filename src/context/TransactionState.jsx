@@ -4,7 +4,7 @@ import TransactionReducer from './TransactionReducer'
 import toast from 'react-hot-toast'
 
 const TransactionState = ({ children }) => {
-  const URL = import.meta.env.VITE_API_URL_DEV
+  const URL = import.meta.env.VITE_API_URL
   const initialState = {
     transactions: []
   }
