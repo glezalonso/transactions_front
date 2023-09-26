@@ -4,7 +4,7 @@ import TransactionReducer from './TransactionReducer'
 import toast from 'react-hot-toast'
 
 const TransactionState = ({ children }) => {
-  const URL = import.meta.env.VITE_API_URL
+  const URL = import.meta.env.VITE_API_URL_DEV
   const initialState = {
     transactions: []
   }
@@ -33,6 +33,25 @@ const TransactionState = ({ children }) => {
     }
   }
 
+  const removeTransactions = async (id) => {
+    try {
+      const response = await fetch(URL + id, {
+        method: 'DELETE'
+      })
+
+      const data = await response.json()
+
+      toast.success('eliminado exitoso')
+      dispatch({
+        type: 'DELETE_TRANSACTION',
+        payload: data._id
+      })
+    } catch (error) {
+      console.log(error.error)
+      toast.error('Hubo un error en el movimiento')
+    }
+  }
+
   const getTransactions = async (date) => {
     try {
       const response = await fetch(URL)
@@ -45,6 +64,7 @@ const TransactionState = ({ children }) => {
       })
     } catch (error) {
       console.log(error)
+      toast.error('Hubo un error al cargar los movimientos')
     }
   }
 
@@ -53,7 +73,8 @@ const TransactionState = ({ children }) => {
       value={{
         transactions: globalState.transactions,
         getTransactions,
-        addTransactions
+        addTransactions,
+        removeTransactions
       }}
     >
       {children}

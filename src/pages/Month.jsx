@@ -15,7 +15,7 @@ const Month = () => {
     <>
       <Container fluid>
         <Row>
-          <Col xs={12} md={4} className="mx-auto">
+          <Col xs={12} md={8} className="mx-auto">
             <CardBalance />
             <TransactionsList />
             <AddTransaction handleShow={handleShow} />

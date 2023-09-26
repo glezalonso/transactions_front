@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import { BsChevronDown } from 'react-icons/bs'
+import React, { useState, useContext } from 'react'
+import { BsChevronDown, BsTrash } from 'react-icons/bs'
+import TransactionContext from '../context/TransactionContext'
 
 const Transaction = ({ transacion }) => {
   const [display, setDisplay] = useState(false)
+  const { removeTransactions } = useContext(TransactionContext)
 
   return (
     <>
@@ -34,12 +36,20 @@ const Transaction = ({ transacion }) => {
       </div>
       {display ? (
         <div
-          className={`w-100 d-flex bg-light  py-3 px-1  justify-content-between ${
+          className={`w-100 d-flex bg-light  py-3 px-1  justify-content-between align-items-center ${
             display ? 'shadow-sm border-bottom rounded-bottom' : ''
           }   rouded bordered `}
         >
           <span className="mx-1">Para: {transacion?.reciver}</span>
-          <span className="mx-1">Detalles: {transacion?.details}</span>
+          <span className="mx-1">
+            Detalles: {transacion?.details}{' '}
+            <BsTrash
+              onClick={() => {
+                const sure = confirm('Esta seguro que desea borrar?')
+                if (sure) return removeTransactions(transacion?._id)
+              }}
+            />
+          </span>
         </div>
       ) : null}
     </>
