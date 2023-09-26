@@ -87,7 +87,7 @@ const NavBar = () => {
             <Link
               className={`nav-link text-light ${
                 pathname === `/month/${year}-08`
-                  ? 'fs-4 text-decoration px-4 '
+                  ? 'fs-4 text-decoration '
                   : 'px-3'
               }`}
               to={`../month/${year}-08`}
@@ -97,7 +97,7 @@ const NavBar = () => {
             <Link
               className={`nav-link text-light ${
                 pathname === `/month/${year}-09`
-                  ? 'fs-4 text-decoration px-4 '
+                  ? 'fs-4 text-decoration '
                   : 'px-3'
               }`}
               to={`../month/${year}-09`}
@@ -107,7 +107,7 @@ const NavBar = () => {
             <Link
               className={`nav-link text-light ${
                 pathname === `/month/${year}-10`
-                  ? 'fs-4 text-decoration px-4 '
+                  ? 'fs-4 text-decoration '
                   : 'px-3'
               }`}
               to={`../month/${year}-10`}
@@ -117,7 +117,7 @@ const NavBar = () => {
             <Link
               className={`nav-link text-light ${
                 pathname === `/month/${year}-11`
-                  ? 'fs-4 text-decoration px-4 '
+                  ? 'fs-4 text-decoration '
                   : 'px-3'
               }`}
               to={`../month/${year}-11`}
@@ -127,7 +127,7 @@ const NavBar = () => {
             <Link
               className={`nav-link text-light ${
                 pathname === `/month/${year}-12`
-                  ? 'fs-4 text-decoration px-4 '
+                  ? 'fs-4 text-decoration '
                   : 'px-3'
               }`}
               to={`../month/${year}-12`}
